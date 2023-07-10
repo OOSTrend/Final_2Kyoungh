@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="skins/color-1.css">
+</head>
+<body>
+    <!--메인 항목-->
+    <div class="main-container">
+        <!-- aside-->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>OOStrend</span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>    
+            <ul class="nav">
+                <li><a href="#" class="actvie">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Photo</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>    
+    
+    <!--메인 컨텐츠-->
+        <div class="main-content">
+            <section class="home section hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hi, my name is <span class="name">kyoung hun Lee</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Engineer</span></h3>
+                            <p>gg</p>
+                            <a href="#contact" class="btn hire-me">반갑습니다.</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--홈파트-->
+            <!--Section-->
+            <section class="about section">
+                <!--태블로 테스트-->
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Tablo sample</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text">
+                                    <script type="text/javascript"
+	                                        src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+                                    <script type="text/javascript">
+                                        function initViz() {
+                                            var containerDiv = document.getElementById("vizContainer"),
+                                                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
+                                                options = {
+                                                    hideTabs: true,
+                                                    onFirstInteractive: function () {
+                                                        console.log("Run this code when the viz has finished loading.");
+                                                    }
+                                                };
+
+                                            var viz = new tableau.Viz(containerDiv, url, options);
+                                        // Create a viz object and embed it in the container div.
+                                        }
+                                    </script>
+
+                                <body onload="initViz();">
+                                    <div id="vizContainer" style="width:800px; height:700px;"></div>
+                                </body>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--태블로 테스트-->
+            </section>
+                 
+           
+
+
+
+
+
+
+           
+        </div>
+
+    </div>
+
+</body>
+
+</html>
